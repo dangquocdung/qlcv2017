@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Quan Ly Cong Viec 2017',
+    'name' => 'Quản lý Công việc 2017',
 
     /*
     |--------------------------------------------------------------------------
