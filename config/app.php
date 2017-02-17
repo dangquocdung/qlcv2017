@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Quan Ly Cong Viec 2017',
 
     /*
     |--------------------------------------------------------------------------
@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:DRio6xbuFRAx/qUZBf9Ic9vf1xJSZHBTdyf8/CGmKFA='),
 
     'cipher' => 'AES-256-CBC',
 

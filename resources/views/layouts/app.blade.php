@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Dang Quoc Dung') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -36,14 +36,21 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Dang Quoc Dung') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                      @if (Auth::check())
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/chuyen-vien">Chuyên viên</a></li>
+                        <li><a href="/truong-phong">Trưởng Phòng</a></li>
+                        <li><a href="/van-thu">Văn Thư</a></li>
+                        <li><a href="/lanh-dao">Lãnh đạo</a></li>
+                        <li><a href="/quan-tri">Quản trị hệ thống</a></li>
+                      @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -56,5 +56,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'vanthuLogin' => \App\Http\Middleware\VanThuLoginMiddleware::class,
+        'chuyenvienLogin' => \App\Http\Middleware\ChuyenVienLoginMiddleware::class,
+        'truongphongLogin' => \App\Http\Middleware\TruongPhongLoginMiddleware::class,
+        'lanhdaoLogin' => \App\Http\Middleware\LanhDaoLoginMiddleware::class,
+        'quantriLogin' => \App\Http\Middleware\QuanTriLoginMiddleware::class,
+
+
     ];
 }
