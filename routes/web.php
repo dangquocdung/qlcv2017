@@ -53,6 +53,8 @@ Route::group(['prefix'=>'van-thu','middleware'=>'vanthuLogin'],function(){
 
   Route::get('/', 'GoiNhanVanBanController@index');
   Route::get('/tao-moi-van-ban', ['as' => 'tao-moi-van-ban', 'uses' =>'GoiNhanVanBanController@getTaoMoiVanBan']);
+  Route::post('/tao-moi-van-ban', ['as' => 'post-tao-moi-van-ban', 'uses' =>'GoiNhanVanBanController@postTaoMoiVanBan']);
+  Route::delete('/delete-van-ban/{id}', ['as' => 'delete-van-ban', 'uses' =>'GoiNhanVanBanController@deleteVanBan']);
 
 });
 
@@ -77,5 +79,6 @@ Route::group(['prefix'=>'lanh-dao','middleware'=>'lanhdaoLogin'],function(){
 Route::group(['prefix'=>'quan-tri','middleware'=>'quantriLogin'],function(){
 
   Route::get('/', 'QuanTriController@index');
+  Route::put('/nguoi-dung/edit/{id}', ['as' => 'cap-nhat-thong-tin-nguoi-dung', 'uses' =>'QuanTriController@putNguoiDung']);
 
 });

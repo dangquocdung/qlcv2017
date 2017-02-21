@@ -13,7 +13,6 @@ class CreateQuyenhanTable extends Migration
      */
      public function up()
      {
-         //
          Schema::create('quyenhan', function (Blueprint $table) {
              $table->increments('id');
              $table->string('quyenhan');
@@ -29,7 +28,6 @@ class CreateQuyenhanTable extends Migration
       */
      public function down()
      {
-         //
          Schema::dropIfExists('quyenhan');
      }
 }
