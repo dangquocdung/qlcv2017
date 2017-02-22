@@ -22,7 +22,7 @@
                     <th>Ngày ban hành</th>
                     <th>Trích yếu</th>
                     <th>Files</th>
-                    <th></th>
+
                   </tr>
                   @php $i=1 @endphp
                   @foreach ($vanban as $vb)
@@ -36,15 +36,7 @@
                     <td data-toggle="collapse" data-parent="#accordion" href="#vanban{{$vb->id}}">
                       <span class="glyphicon glyphicon-paperclip" aria-hidden="true">
                     </td>
-                    <td>
-                      <form action="{{ route('delete-van-ban', ['id' => $vb->id]) }}" method="POST">
-                        <input type="hidden" name="_method" value="DELETE"/>
-                        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-
-                        <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#">Gởi</button>
-                        <button onclick="return confirm('Bạn muốn văn bản này?')" type="submit" class="btn btn-sm btn-danger">Xóa</button>
-                      </form>
-                    </td>
+                    
                   </tr>
 
                   <tr id="vanban{{$vb->id}}" class="panel-collapse collapse">

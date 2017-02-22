@@ -45,11 +45,11 @@
                     <!-- Branding Image -->
                     <div class="navbar-brand">
                       <a href="{{ url('/home') }}">
-                          Trang chủ
+                          {{ config('app.name', 'Dang Quoc Dung') }}
                       </a>
                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                       <a href="{{ url('/van-thu') }}">
-                          Gửi nhận Văn bản
+                          Văn Thư
                       </a>
 
                     </div>

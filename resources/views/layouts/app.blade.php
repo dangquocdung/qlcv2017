@@ -36,7 +36,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         {{ config('app.name', 'Dang Quoc Dung') }}
                     </a>
                 </div>
@@ -45,7 +45,6 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                       @if (Auth::check())
-                        <li><a href="/home">Home</a></li>
                         <li><a href="/chuyen-vien">Chuyên viên</a></li>
                         <li><a href="/truong-phong">Trưởng Phòng</a></li>
                         <li><a href="/van-thu">Văn Thư</a></li>
