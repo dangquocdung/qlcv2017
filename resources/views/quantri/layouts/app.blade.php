@@ -102,6 +102,8 @@
         @yield('content')
     </div>
 
+    
+
     <!-- Scripts -->
 
 </body>

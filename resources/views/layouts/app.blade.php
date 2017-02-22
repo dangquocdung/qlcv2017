@@ -97,6 +97,14 @@
         @yield('content')
     </div>
 
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright <a href="http://dangquocdung.com">Đặng Quốc Dũng</a> © 2017. All rights reserved.</p>
+      </div>
+    </footer>
+
+    
+
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
