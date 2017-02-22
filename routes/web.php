@@ -84,4 +84,7 @@ Route::group(['prefix'=>'quan-tri','middleware'=>'quantriLogin'],function(){
   Route::get('/', 'QuanTriController@index');
   Route::put('/nguoi-dung/edit/{id}', ['as' => 'cap-nhat-thong-tin-nguoi-dung', 'uses' =>'QuanTriController@putNguoiDung']);
 
+  Route::delete('/nguoi-dung/delete/{id}', ['as' => 'delete-nguoi-dung', 'uses' =>'QuanTriController@deleteNguoiDung']);
+
+
 });

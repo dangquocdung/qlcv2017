@@ -32,7 +32,7 @@
                     <td>{{ $nd->quyenhan->quyenhan }}</td>
                     <td>{{ $nd->created_at }}</td>
                     <td>
-                      <form action="#" method="POST">
+                      <form action="{{ route('delete-nguoi-dung', ['id' => $nd->id]) }}" method="POST">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                           <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#user{{$nd->id}}">Edit</button>

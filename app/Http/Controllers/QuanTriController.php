@@ -45,5 +45,13 @@ class QuanTriController extends Controller
     return redirect('/quan-tri');
   }
 
+  public function deleteNguoiDung($id)
+  {
+    $usr = User::find($id);
+    $usr->delete();
+
+    return redirect('/quan-tri');
+  }
+
 
 }
