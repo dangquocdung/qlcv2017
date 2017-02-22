@@ -11,7 +11,7 @@
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Văn Bản Đi
     </a>
     <div id="vanBanDi" class="panel-collapse collapse in">
-      <a class="bg-info list-group-item" href="/van-ban-di-cho-gui">
+      <a class="bg-info list-group-item" href=" {{ route('van-ban-cho-goi') }}">
         <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Văn bản đi chờ gửi <span class="badge">0</span>
       </a>
 

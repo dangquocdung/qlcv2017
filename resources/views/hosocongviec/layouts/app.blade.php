@@ -43,9 +43,17 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/home') }}">
-                        Hồ Sơ Công Việc
-                    </a>
+                    <div class="navbar-brand">
+                      <a href="{{ url('/home') }}">
+                          Trang chủ
+                      </a>
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <a href="{{ url('/chuyen-vien') }}">
+                          Hồ Sơ Công Việc
+                      </a>
+
+                    </div>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

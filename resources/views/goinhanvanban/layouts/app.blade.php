@@ -43,9 +43,18 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/home') }}">
-                        Gửi nhận Văn bản
-                    </a>
+                    <div class="navbar-brand">
+                      <a href="{{ url('/home') }}">
+                          Trang chủ
+                      </a>
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <a href="{{ url('/van-thu') }}">
+                          Gửi nhận Văn bản
+                      </a>
+
+                    </div>
+
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

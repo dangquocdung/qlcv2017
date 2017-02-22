@@ -54,6 +54,9 @@ Route::group(['prefix'=>'van-thu','middleware'=>'vanthuLogin'],function(){
   Route::get('/', 'GoiNhanVanBanController@index');
   Route::get('/tao-moi-van-ban', ['as' => 'tao-moi-van-ban', 'uses' =>'GoiNhanVanBanController@getTaoMoiVanBan']);
   Route::post('/tao-moi-van-ban', ['as' => 'post-tao-moi-van-ban', 'uses' =>'GoiNhanVanBanController@postTaoMoiVanBan']);
+
+  Route::get('/van-ban-cho-goi', ['as' => 'van-ban-cho-goi', 'uses' =>'GoiNhanVanBanController@getVanBanChoGoi']);
+
   Route::delete('/delete-van-ban/{id}', ['as' => 'delete-van-ban', 'uses' =>'GoiNhanVanBanController@deleteVanBan']);
 
 });

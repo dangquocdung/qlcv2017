@@ -48,6 +48,7 @@ class GoiNhanVanBanController extends Controller
       return view('goinhanvanban.taomoi');
   }
 
+
   public function postTaoMoiVanBan(Request $request)
   {
       $vb = new VanBan;
@@ -96,6 +97,11 @@ class GoiNhanVanBanController extends Controller
     	}
 
       return redirect('van-thu');
+  }
+
+  public function getVanBanChoGoi()
+  {
+      return view('goinhanvanban.chogoi');
   }
 
   public function deleteVanBan(Request $request, $id)

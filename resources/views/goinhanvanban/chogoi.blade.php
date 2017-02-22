@@ -9,7 +9,7 @@
       <div class="col-md-9">
 
         <div class="panel panel-default">
-            <div class="panel-heading">5 Văn bản mới đăng</div>
+            <div class="panel-heading">Văn bản chờ gởi</div>
 
             <div class="panel-body">
               <div class="table-responsive">
@@ -65,6 +65,8 @@
             </div>
         </div>
       </div>
+
+
     </div>
 </div>
 @endsection
