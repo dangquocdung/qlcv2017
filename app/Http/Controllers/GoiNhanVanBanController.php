@@ -104,11 +104,10 @@ class GoiNhanVanBanController extends Controller
       return view('goinhanvanban.chogoi');
   }
 
-  public function deleteVanBan(Request $request, $id)
+  public function deleteVanBan($id)
   {
     $vb = VanBan::find($id);
     $vb->delete();
-
     return redirect('van-thu');
   }
 

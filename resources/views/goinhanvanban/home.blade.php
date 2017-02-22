@@ -1,7 +1,5 @@
 @extends('goinhanvanban.layouts.app')
 
-
-
 @section('content')
 <div class="container">
     <div class="row">
@@ -22,7 +20,6 @@
                     <th>Ngày ban hành</th>
                     <th>Trích yếu</th>
                     <th>Files</th>
-
                   </tr>
                   @php $i=1 @endphp
                   @foreach ($vanban as $vb)
@@ -52,11 +49,13 @@
 
                   @php $i++ @endphp
                   @endforeach
+
                 </table>
               </div>
             </div>
         </div>
       </div>
+
     </div>
 </div>
 @endsection
