@@ -71,10 +71,6 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ route('so-tay') }}">Sổ tay</a></li>
-
-                                    <li class="divider"></li>
-
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -103,7 +99,7 @@
       </div>
     </footer>
 
-    
+
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
