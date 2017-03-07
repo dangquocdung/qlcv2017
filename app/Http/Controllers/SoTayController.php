@@ -18,7 +18,7 @@ class SoTayController extends Controller
 
   public function index()
   {
-    $ghichu = SoTay::where('nguoitao',Auth::user()->id)->orderby('id','desc')->get();
+    $ghichu = SoTay::orderby('id','desc')->get();
 
     return view('quantri.sotay',['ghichu'=>$ghichu]);
   }
